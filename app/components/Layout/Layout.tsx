@@ -1,13 +1,11 @@
-import { DetailedHTMLProps, FC, HTMLAttributes } from 'react'
+import { DetailedHTMLProps, FC, HTMLAttributes, ReactNode } from 'react'
 
 import styles from './Layout.module.scss'
 
 import Navigation from './Navigation/Navigation'
 import Sidebar from './Sidebar/Sidebar'
 
-const Layout: FC = ({
-	children,
-}: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>) => {
+const Layout = ({ children }: { children: ReactNode }) => {
 	return (
 		<div className={styles.layout}>
 			<Navigation />
