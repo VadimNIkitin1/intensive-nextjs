@@ -1,4 +1,4 @@
-import { DetailedHTMLProps, FC, HTMLAttributes, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 import styles from './Layout.module.scss'
 
