@@ -1,12 +1,19 @@
+'use client'
+
 import { FC } from 'react'
 import Menu from './Menu'
 import { firstMenu, userMenu } from './menu.data'
+import GenreMenu from './genres/GenreMenu'
+import MainProviders from 'providers/MainProviders'
 
 const MenuContainer: FC = () => {
 	return (
 		<div>
-			<Menu menu={firstMenu} />
-			<Menu menu={userMenu} />
+			<MainProviders>
+				<Menu menu={firstMenu} />
+				<GenreMenu />
+				<Menu menu={userMenu} />
+			</MainProviders>
 		</div>
 	)
 }
