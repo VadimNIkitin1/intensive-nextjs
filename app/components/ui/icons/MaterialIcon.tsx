@@ -1,5 +1,4 @@
 import * as MaterialIcons from 'react-icons/md'
-
 import { TypeMaterialIconsName } from '@/shared/types/icons.types'
 import { FC } from 'react'
 

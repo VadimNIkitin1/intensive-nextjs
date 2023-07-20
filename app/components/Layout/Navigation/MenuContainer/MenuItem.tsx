@@ -21,7 +21,8 @@ const MenuItem: FC<{ item: IMenuItem }> = ({ item }) => {
 		>
 			<Link href={item.link} legacyBehavior>
 				<a>
-					<MaterialIcon name={item.icon} />
+					{!item.icon ? <> </> : <MaterialIcon name={item.icon} />}
+
 					<span>{item.title}</span>
 				</a>
 			</Link>
